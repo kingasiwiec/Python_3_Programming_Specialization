@@ -1,0 +1,21 @@
+# It is possible to name the days 0 thru 6 where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6). Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+
+
+startday = input("Enter start day")
+startday = int(startday)
+length = input("Enter the length of stay")
+length = int(length)
+
+dayofweek = startday + length
+realdayofweek = dayofweek % 7
+print(realdayofweek
+
+
+
+# Write a program that will convert degrees celsius to degrees fahrenheit.
+
+celsius = int(input("Enter the celsius degrees"))
+
+fahrenheit = celsius * (9/5) + 32
+
+print("It is ", fahrenheit, " degrees fahrenheit")

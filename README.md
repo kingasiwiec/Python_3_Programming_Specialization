@@ -27,6 +27,6 @@ Material covered:
   <li>Defining Classes</li>
   <li>Building Programs</li>
   <li>Inheritance</li>
-  <li>Accumulation: Map, Filter, List Comprehension and Zip</li
+  <li>Accumulation: Map, Filter, List Comprehension and Zip</li>
   <li>Internet APIs</li>
 </ul>

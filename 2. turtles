@@ -1,0 +1,23 @@
+# Use for loops to make a turtle draw an octagon (eight sides)
+
+import turtle
+wn = turtle.Screen()
+eda = turtle.Turtle()
+
+for number in range(8):
+    eda.forward(50)
+    eda.left(360/8)
+
+# Write a program that uses the turtle module to draw something.
+
+import turtle
+wn = turtle.Screen()
+bob = turtle.Turtle()
+
+bob.speed(200)
+bob.color("crimson")
+distance = 10
+for n in range(500):
+    bob.forward(distance)
+    bob.left(144)
+    distance = distance + 1

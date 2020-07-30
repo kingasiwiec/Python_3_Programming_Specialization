@@ -2,6 +2,7 @@
 # A year is a leap year if it is divisible by 4. If the year can be evenly divided by 100, it is NOT a leap year, unless the year is also evenly divisible by 400.
 # Then it is a leap year. Write code that asks the user to input a year and output True if it’s a leap year, or False otherwise. Use if statements.
 
+
 year = int(input("Enter a year"))
 
 if (year % 4 == 0):
@@ -24,6 +25,7 @@ else:
 # a >= b
 # a >= 18  and  day == 3
 # a >= 18  or  day != 3
+
 
 a = input("Enter a")
 b = input("Enter b")
@@ -77,6 +79,7 @@ print(is_even)
 #If a good programmer wants to know whether x is equal or close enough to y, they would probably code it up as
 # if  abs(x - y) < 0.001:      # if x is approximately equal to y
 
+
 a = 5
 b = 6
 c = 8
@@ -128,7 +131,7 @@ else:
 
 # Exercise 6
 # Get the user to enter some text and print out True if it’s a palindrome, False otherwise. 
-#(Hint: Start by reversing the input string, and then use the == operator to compare two values to see if they are the same)
+# (Hint: Start by reversing the input string, and then use the == operator to compare two values to see if they are the same)
 
 
 text = input("Enter some text")
@@ -163,6 +166,7 @@ for word in sentence.split():
 # Note 1: be sure to not double-count words that contain both an a and an e.
 # HINT 1: Use the in operator.
 # HINT 2: You can either use or or elif.
+
 
 sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
 

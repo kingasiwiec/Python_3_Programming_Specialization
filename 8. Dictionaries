@@ -24,8 +24,10 @@ print(most_used)
 
 
 # Exercise 2
-# Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together with the number of times each letter occurs. Case should be ignored.
-
+# Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together 
+# with the number of times each letter occurs. Case should be ignored.
+ 
+ 
 sentence_normal = input("Please enter a sentence")
 sentence = sentence_normal.lower()
 dictionary = {}
@@ -45,7 +47,9 @@ for letter in sorted(keys):
 
 
 # Exercise 3
-# The dictionary Junior shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable credits. Do not hardcode this – use dictionary accumulation!
+# The dictionary Junior shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits 
+# taken this semester and assign it to the variable credits. Do not hardcode this – use dictionary accumulation!
+
 
 Junior = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
 
@@ -56,8 +60,10 @@ for score in Junior:
 print(credits)
 
 
+
 # Exercise 4
 # Create a dictionary, freq, that displays each character in string str1 as the key and its frequency as the value.
+
 
 str1 = "peter piper picked a peck of pickled peppers"
 freq = {}
@@ -69,8 +75,10 @@ for letter in str1:
 print(freq)
 
 
+
 # Exercise 5
 # Provided is a string saved to the variable name s1. Create a dictionary named counts that contains each letter in s1 and the number of times it occurs.
+
 
 s1 = "hello"
 counts = {}
@@ -83,8 +91,11 @@ for char in s1:
 print(counts)
 
 
+
 # Exercise 6
-# Create the dictionary characters that shows each character from the string sally and its frequency. Then, find the most frequent letter based on the dictionary. Assign this letter to the variable best_char.
+# Create the dictionary characters that shows each character from the string sally and its frequency. Then, find the most frequent letter based on the dictionary. 
+# Assign this letter to the variable best_char.
+
 
 sally = "sally sells sea shells by the sea shore"
 characters = {}
@@ -104,10 +115,16 @@ for key in keys:
 print(best_char)
 
 
-# Exercise7
-# Create a dictionary named letter_counts that contains each letter and the number of times it occurs in string1. Challenge: Letters should not be counted separately as upper-case and lower-case. Intead, all of them should be counted as lower-case.
 
-string1 = "There is a tide in the affairs of men, Which taken at the flood, leads on to fortune. Omitted, all the voyage of their life is bound in shallows and in miseries. On such a full sea are we now afloat. And we must take the current when it serves, or lose our ventures."
+# Exercise7
+# Create a dictionary named letter_counts that contains each letter and the number of times it occurs in string1. 
+# Challenge: Letters should not be counted separately as upper-case and lower-case. Intead, all of them should be counted as lower-case.
+
+
+string1 = "There is a tide in the affairs of men, Which taken at the flood, leads on to fortune. Omitted, all the voyage of their life is bound in shallows and in miseries. 
+On such a full sea are we now afloat. And we must take the current when it serves, or lose our ventures."
+
+
 letter_counts = {}
 string2 = string1.lower() # assures that lower-case and upper-case letters will not be counted separately
 

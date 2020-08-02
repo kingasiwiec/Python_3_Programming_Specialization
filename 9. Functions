@@ -24,8 +24,11 @@ def remove_letter(theLetter, theString):
         return theString
 
 
+
 # Exercise 3
-# Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value. (Note: there is a builtin function named max but pretend you cannot use it.)
+# Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value. 
+# (Note: there is a builtin function named max but pretend you cannot use it.)
+
 
 import random
 
@@ -44,8 +47,9 @@ for n in range(100):
 print(maximum(lst))
 
 
+
 # Exercise 4
-# Write a function sum_of_squares(xs) that computes the sum of the squares of the numbers in the list xs. For example, sum_of_squares([2, 3, 4]) should return 4+9+16 which is 29:
+# Write a function sum_of_squares(xs) that computes the sum of the squares of the numbers in the list xs. For example, sum_of_squares([2, 3, 4]) should return 4+9+16 which is 29
 
 
 def sum_of_squares(xs):
@@ -60,8 +64,10 @@ def sum_of_squares(xs):
     return x
 
 
+
 # Exercise 5
 # Write a function to count how many odd numbers are in a list.
+
 
 def countOdd(lst):
     counter = 0
@@ -69,6 +75,7 @@ def countOdd(lst):
         if number % 2 != 0:
             counter = counter + 1
     return counter
+
 
 
 # Exercise 6
@@ -82,8 +89,10 @@ def sumEven(lst):
     return summ
 
 
+
 # Exercise 7
 # Sum up all the negative numbers in a list.
+
 
 def sumNegatives(lst):
     mysum = 0
@@ -94,8 +103,12 @@ def sumNegatives(lst):
 
 
 
+
 # Exercise 8
-# You will need to write two functions for this problem. The first function, divide that takes in any number and returns that same number divided by 2. The second function called sum should take any number, divide it by 2, and add 6. It should return this new number. You should call the divide function within the sum function. Do not worry about decimals.
+# You will need to write two functions for this problem. The first function, divide that takes in any number and returns that same number divided by 2. 
+# The second function called sum should take any number, divide it by 2, and add 6. It should return this new number. You should call the divide function 
+# within the sum function. Do not worry about decimals.
+
 
 def divide(a):
     return a / 2

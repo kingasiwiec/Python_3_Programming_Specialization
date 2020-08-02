@@ -1,0 +1,120 @@
+# Exercise 1
+# Write a program that finds the most used 7 letter word in scarlet3.txt.
+
+
+f = open('scarlet3.txt', 'r')
+text = f.read()
+dictionary = {}
+
+for word in text.split():
+    if len(word) == 7:
+        if word not in dictionary:
+            dictionary[word] = 0
+        dictionary[word] = dictionary[word] + 1
+
+keys = dictionary.keys()
+most_used = keys[0]
+
+for key in keys:
+    if dictionary[key] > dictionary[most_used]:
+        most_used = key
+
+print(most_used)
+
+
+
+# Exercise 2
+# Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together with the number of times each letter occurs. Case should be ignored.
+
+sentence_normal = input("Please enter a sentence")
+sentence = sentence_normal.lower()
+dictionary = {}
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+for letter in sentence:
+    if letter in alphabet:
+        if letter in dictionary:
+            dictionary[letter] = dictionary[letter] + 1
+        else:
+            dictionary[letter] = 1
+
+keys = dictionary.keys()
+for letter in sorted(keys):
+    print(letter, dictionary[letter])
+
+
+
+# Exercise 3
+# The dictionary Junior shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable credits. Do not hardcode this – use dictionary accumulation!
+
+Junior = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
+
+credits = 0
+
+for score in Junior:
+    credits = credits + Junior[score]
+print(credits)
+
+
+# Exercise 4
+# Create a dictionary, freq, that displays each character in string str1 as the key and its frequency as the value.
+
+str1 = "peter piper picked a peck of pickled peppers"
+freq = {}
+
+for letter in str1:
+    if letter not in freq:
+        freq[letter] = 0
+    freq[letter] = freq[letter] + 1
+print(freq)
+
+
+# Exercise 5
+# Provided is a string saved to the variable name s1. Create a dictionary named counts that contains each letter in s1 and the number of times it occurs.
+
+s1 = "hello"
+counts = {}
+
+for char in s1:
+    if char in counts:
+        counts[char] = counts[char] +1
+    else:
+        counts[char] = 1
+print(counts)
+
+
+# Exercise 6
+# Create the dictionary characters that shows each character from the string sally and its frequency. Then, find the most frequent letter based on the dictionary. Assign this letter to the variable best_char.
+
+sally = "sally sells sea shells by the sea shore"
+characters = {}
+
+for char in sally:
+    if char not in characters:
+        characters[char] = 0
+    characters[char] = characters[char] + 1
+print(characters)
+
+keys = list(characters.keys())
+best_char = keys[0]
+
+for key in keys:
+    if characters[key] > characters[best_char]:
+        best_char = key
+print(best_char)
+
+
+# Exercise7
+# Create a dictionary named letter_counts that contains each letter and the number of times it occurs in string1. Challenge: Letters should not be counted separately as upper-case and lower-case. Intead, all of them should be counted as lower-case.
+
+string1 = "There is a tide in the affairs of men, Which taken at the flood, leads on to fortune. Omitted, all the voyage of their life is bound in shallows and in miseries. On such a full sea are we now afloat. And we must take the current when it serves, or lose our ventures."
+letter_counts = {}
+string2 = string1.lower() # assures that lower-case and upper-case letters will not be counted separately
+
+for letter in string2:
+    if letter in letter_counts:
+        letter_counts[letter] = letter_counts[letter] + 1
+    else:
+        letter_counts[letter] = 1
+
+print(letter_counts)

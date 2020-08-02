@@ -1,0 +1,97 @@
+# Exercise 1
+# The following sample file called studentdata.txt contains one line for each student in an imaginary class. The students name is the first thing on each line, followed by some exam scores. The number of scores might be different for each student.
+# Using the text file studentdata.txt write a program that prints out the names of students that have more than six quiz scores.
+
+file = open("studentdata.txt", "r")
+
+for line in file:
+    item = line.split()
+    if len(item) >= 6:
+        print(item[0])
+file.close()
+
+
+# Exercise 2
+# Create a list called destination using the data stored in travel_plans.txt. Each element of the list should contain a line from the file that lists a country and cities inside that country. Hint: each line that has this information also has a colon : in it.
+
+
+file = open("travel_plans.txt", "r")
+filename = file.readlines()
+destination = []
+
+for line in filename:
+    if ":" in line:
+        destination.append(line)
+file.close()
+
+
+# Exercise 3
+# Create a list called j_emotions that contains every word in emotion_words.txt that begins with the letter “j”.
+
+file = open("emotion_words.txt", "r")
+filename = file.read().split()
+j_emotions = []
+
+for word in filename:
+    if word[0] == 'j':
+        j_emotions.append(word)
+
+file.close()
+
+
+# Exercise 4
+# We have provided a file called emotion_words.txt that contains lines of words that describe emotions. Find the total number of words in the file and assign this value to the variable num_words.
+
+filename = open("emotion_words.txt", "r")
+file = filename.read().split()
+
+num_words = len(file)
+print(num_words)
+
+filename.close()
+
+
+# Exercise 5
+# Assign the first 30 characters of school_prompt.txt as a string to the variable beginning_chars.
+
+filename = open("school_prompt.txt", "r")
+file = filename.read()
+
+beginning_chars = ""
+
+for char in file[:30]:
+    beginning_chars = beginning_chars + char
+print(beginning_chars)
+
+filename.close()
+
+
+# Exercise 6
+# Challenge: Using the file school_prompt.txt, assign the third word of every line to a list called three.
+filename = open("school_prompt.txt", "r")
+file = filename.readlines()
+
+three = []
+
+for line in file:
+    line = line.split()
+    three.append(line[2])
+print(three)
+
+filename.close()
+
+
+# Exercise 7
+# Challenge: Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
+
+filename = open("school_prompt.txt", "r")
+file = filename.read().split()
+
+p_words = []
+for word in file:
+    if 'p' in word:
+        p_words.append(word)
+
+print(p_words)
+
+filename.close()

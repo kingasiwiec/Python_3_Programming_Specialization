@@ -11,7 +11,7 @@ while counter <= 35:
 
 
 # Exercise 2
-# Create a while loop that initializes a counter at 0 and will run until the counter reaches 50. If the value of the counter is divisible by 10, append the value to the list, tens.
+# Create a while loop that initializes a counter at 0 and will run until the counter reaches 50. If the value of the counter is divisible by 10, append the value to the list.
 
 
 counter = 0

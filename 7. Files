@@ -81,6 +81,7 @@ filename.close()
 # Exercise 6
 # Challenge: Using the file school_prompt.txt, assign the third word of every line to a list called three.
 
+
 filename = open("school_prompt.txt", "r")
 file = filename.readlines()
 

@@ -1,6 +1,7 @@
 # Exercise 1
 # Write code to switch the order of the winners list so that it is now A to Z by last name. Assign this list to the variable z_winners.
 
+
 winners = ['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
 
 z_winners = sorted(winners, key = lambda x: x.split()[-1])
@@ -10,24 +11,26 @@ z_winners = sorted(winners, key = lambda x: x.split()[-1])
 # Exercise 2
 # Given the same dictionary, medals, now sort by the medal count. Save the three countries with the highest medal count to the list, top_three.
 
-medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
 
+medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
 
 y = sorted(medals, reverse=True, key = lambda x: medals[x])
 top_three = y[:3]
 
 
+
 # Exercise 3
-# Create a function called last_four that takes in an ID number and returns the last four digits. For example, the number 17573005 should return 3005. Then, use this function to sort the list of ids stored in the variable, ids, from lowest to highest. Save this sorted list in the variable, sorted_ids. Hint: Remember that only strings can be indexed, so conversions may be needed.
+# Create a function called last_four that takes in an ID number and returns the last four digits. For example, the number 17573005 should return 3005.
+# Then, use this function to sort the list of ids stored in the variable, ids, from lowest to highest. Save this sorted list in the variable, sorted_ids. 
+# Hint: Remember that only strings can be indexed, so conversions may be needed.
+
 
 def last_four(x):
     for i in ids:
         i = str(i)
     return i[-4]
 
-
 ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
-
 
 sorted_ids = sorted(ids, key = last_four)
 
@@ -35,6 +38,7 @@ sorted_ids = sorted(ids, key = last_four)
 
 # Exercise 4
 # Sort the list ids by the last four digits of each id. Do this using lambda and not using a defined function. Save this sorted list in the variable sorted_id.
+
 
 ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
 

@@ -10,7 +10,7 @@ length = int(length)
 
 dayofweek = startday + length
 realdayofweek = dayofweek % 7
-print(realdayofweek
+print(realdayofweek)
 
 
 

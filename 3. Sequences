@@ -3,7 +3,7 @@
 nums = [4, 2, 23.4, 9, 545, 9, 1, 234.001, 5, 49, 8, 9 , 34, 52, 1, -2, 9.1, 4]
 
 how_many = nums.count(9)
-print(how_many
+print(how_many)
 
 
 # Write code that uses slicing to get rid of the the second 8 so that here are only two 8’s in the list bound to the variable nums.

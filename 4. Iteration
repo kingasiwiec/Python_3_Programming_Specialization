@@ -16,7 +16,7 @@ import turtle
 wn = turtle.Screen()
 ben = turtle.Turtle()
 
-number_sides = int(input("Enter the number of sides"))
+number_sides = input(input("Enter the number of sides"))
 lenght_side = input("Enter the length of the side")
 given_color = input("Enter the border color")
 fill_color = input("Enter the fill color")

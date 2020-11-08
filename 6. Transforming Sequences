@@ -37,7 +37,6 @@ print(lower)
 
 import keyword
 test = ["else", "integer", "except", "elif"]
-keyword_test = []
 
 keyword_test = []
 for word in test:
